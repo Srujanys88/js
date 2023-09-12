@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>welcome to last lab</h1>
+    <h2>javascript event handling</h2>
+    <form action="">
+      <label
+        >USN : <input type="text" maxlength="20" id="usn" onfocus="checksum()"
+      /></label>
+      <br />
+      <br />
+      <div>
+        <label>USN : <input type="text" maxlength="20" id="name" /> </label>
+        <br />
+        <br />
+        <label>phone : <input type="text" maxlength="20" id="phone" /> </label>
+        <br />
+        <br />
+        <label> Email: <input type="text" maxlength="20" id="email" /></label>
+      </div>
+    </form>
+    <script>
+      function checksum() {
+        var u = document.getElementById("usn").value;
+        if (u.match(/4JN[0-9]{2}[A-Z]{2}[A-Z]{3}/)) {
+          document.getElementById("rem").style.visibility = "visible";
+        } else {
+          alert("please enter valid usn");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <h1>Pattern matching</h1>
+      <script type="text/javascript">
+        var mylist = new Array(
+          "Asterix",
+          "obelix",
+          "geatfix",
+          "vitalstatistix",
+          "caestixer ",
+          "cleoptra"
+        );
+        var gaulcnt = 0,
+          romancnt = 0;
+        for (var i = 0; i < mylist.length; i++) {
+          pos = mylist[i].search(/ix/);
+          if (pos > 0) {
+            gaulcnt++;
+            document.write(mylist[i] + " is a GAUL <br/>");
+          } else {
+            romancnt++;
+            document.write(mylist[i] + " is a roman <br/>");
+          }
+        }
+      </script>
+    </center>
+  </body>
+</html>

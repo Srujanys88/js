@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center><h1>welcome to everyone</h1></center>
+    <script type="text/javascript">
+      var days = new Array(
+        "Monday",
+        "Tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      );
+      var today = new Date();
+      var day = today.getDay();
+      document.write("<h6> date : " + today.getDate() + "</h6>");
+      document.write("<h6>day : " + days[day - 1] + "</h6>");
+      document.write("<h6> month : " + today.getMonth() + "</h6>");
+      document.write("<h6> year  : " + today.getFullYear() + "</h6>");
+      document.write("<h6> hour  : " + today.getHours() + "</h6>");
+      document.write("<h6> minutes : " + today.getMinutes() + "</h6>");
+      document.write("<h6> seconds : " + today.getSeconds() + "</h6>");
+      document.write("<h6> miliseconds : " + today.getMilliseconds() + "</h6>");
+      document.write("<h4> you are visited my website </h4>");
+    </script>
+  </body>
+</html>

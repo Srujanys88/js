@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>regular expression</h1>
+    <form action="">
+      <label> name : <input id="nm" type="text" /></label>
+      <button type="button" onclick="readnm()">click here</button>
+    </form>
+    <p id="res"></p>
+    <script>
+      function readnm() {
+        var nm = document.getElementById("nm").value;
+        var nm = (document.getElementById("res").innerHTML =
+          "My name is " + nm);
+      }
+    </script>
+  </body>
+</html>
